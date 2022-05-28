@@ -1,0 +1,22 @@
+.footer {
+  padding: 60px 0 57px 0;
+  background-color: var(--logo-color-black);
+}
+.footer__info {
+  margin-right: 70px;
+}
+
+.footer .container-site {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__bottom-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--footer__bottom-text-color);
+}

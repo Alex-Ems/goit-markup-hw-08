@@ -1,0 +1,29 @@
+.footer__address-link,
+.footer__address-mail,
+.footer__address-tel {
+  display: inline-block;
+  font-style: normal;
+  
+  &:hover, &:focus {
+  color: var(--header-link-hover);}
+}
+
+.footer__address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer__address-link-color);
+}
+
+.footer__address-mail,
+.footer__address-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color-tel-mail);
+}
+.footer__address-item:not(:last-child) {
+  margin-bottom: 9px;
+}

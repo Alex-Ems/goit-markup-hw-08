@@ -1,0 +1,35 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+@import './components/container';
+
+@import './layout/header';
+@import './components/logo-header';
+@import './components/navigation';
+@import './components/contacts';
+@import './layout/hero';
+@import './components/hero-btn';
+@import './layout/qualities';
+@import './layout/skills';
+@import './layout/team';
+@import './components/specialist-social-link';
+@import './layout/clients';
+@import './components/clients-logo';
+@import './layout/footer';
+@import './components/footer-logo';
+@import './components/footer-address';
+@import './components/footer-social';
+@import './components/footer-input';
+@import './components/footer-btn';
+@import './components/modal-backdrop';
+@import './components/modal-btn-close';
+@import './layout/modal';
+@import './components/modal-input';
+@import './components/modal-check-box';
+@import './components/modal-btn-submit';
+
+@import './layout/portfolio';
+@import './components/portfolio-btn';
+@import './components/portfolio-project-card';
+@import './components/portfolio_hover-text';
