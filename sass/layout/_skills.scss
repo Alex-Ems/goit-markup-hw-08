@@ -1,5 +1,9 @@
 .skills {
   padding-bottom: 94px;
+  display: none;
+  @include desktop{
+    display: block;
+  }
 }
 
 .skills__title {

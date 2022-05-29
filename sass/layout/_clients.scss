@@ -1,14 +1,21 @@
 .clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
   padding-top: 94px;
   padding-bottom: 94px;
+  }
+
 }
 
 .clients__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--clients__title);
   margin-bottom: 50px;
+  
+  @include desktop {
+    @include font(null, 36px, 1.18, null)
+  }
 }

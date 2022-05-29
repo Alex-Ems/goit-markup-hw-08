@@ -1,14 +1,30 @@
 .footer {
-  padding: 60px 0 57px 0;
+  padding: 60px 0;
   background-color: var(--logo-color-black);
 }
 .footer__info {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+    @include desktop {
+    margin-bottom: 0;
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .footer .container-site {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @include desktop {
+  justify-content: flex-start;
+  }
 }
 
 .footer__bottom-text {

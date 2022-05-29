@@ -1,3 +1,23 @@
+.types-of-projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+.types-of-projects__item:not(:nth-child(n + 4)) {
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
 .types-of-projects__item:not(:last-child) {
   margin-right: 8px;
 }

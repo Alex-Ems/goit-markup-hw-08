@@ -23,18 +23,22 @@
     <title>WebStudio</title>
   </head>
   <body class="body">
-    <!-- <header class="header-site">
+    <header class="header-site">
       <div class="container-site">
         <nav class="header-nav">
           <a class="header-nav__logo logo" href="./index.html" lang="en"
             >Web<span class="header-nav__logo-text">Studio</span></a
           >
           <ul class="header-list list">
-            <li class="header-list__item"><a class="header-list__link link current" href="">Студия</a></li>
+            <li class="header-list__item">
+              <a class="header-list__link link current" href="">Студия</a>
+            </li>
             <li class="header-list__item">
               <a class="header-list__link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header-list__item"><a class="header-list__link link" href="">Контакты</a></li>
+            <li class="header-list__item">
+              <a class="header-list__link link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-contact list">
@@ -55,8 +59,45 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn__open-menu" data-menu-open>
+          <svg class="btn__icon-open-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-open-menu-mob"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden-mob" data-menu>
+        <button type="button" class="menu-close-mob" data-menu-close>
+          <svg class="btn__icon-close-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-menu-mob"></use>
+          </svg>
+        </button>
+        <ul class="nav-mob-list list">
+          <li class="nav-mob-item">
+            <a href="./index.html" class="nav-mob-link link current-mob">Студия</a>
+          </li>
+          <li class="nav-mob-item">
+            <a href="./portfolio.html" class="nav-mob-link link">Портфолио</a>
+          </li>
+          <li class="nav-mob-item"><a href="#" class="nav-mob-link link">Контакты</a></li>
+        </ul>
+        <div>
+          <ul class="mob-contact-list list">
+            <li class="mob-contact-item">
+              <a class="mob-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-contact-item">
+              <a class="mob-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-social-list list">
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Instagram</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Twitter</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Facebook</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main class="main-index">
       <section class="hero">
         <div class="container-site">
@@ -66,7 +107,7 @@
       </section>
       <section class="qualities">
         <div class="container-site">
-          <h2 class="qualities__title" hidden>Качества</h2>
+          <h2 class="qualities__title visually-hidden">Качества</h2>
           <ul class="qualities__list list">
             <li class="qualities__item">
               <div class="qualities__icon-background">
@@ -115,13 +156,14 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="skills">
+      <section class="skills">
         <div class="container-site">
           <h2 class="skills__title">Чем мы занимаемся</h2>
           <ul class="skills__list list">
             <li class="skills__item">
               <img
                 class="skills__img img"
+                srcset="./images/box_1.jpg 1x, ./images/box_1-2x.jpg 2x"
                 src="./images/box_1.jpg"
                 alt="Разработка сайта"
                 width="370"
@@ -134,6 +176,7 @@
             <li class="skills__item">
               <img
                 class="skills__img img"
+                srcset="./images/box_2.jpg 1x, ./images/box_2-2x.jpg 2x"
                 src="./images/box_2.jpg"
                 alt="Оптимизация сайта"
                 width="370"
@@ -146,6 +189,7 @@
             <li class="skills__item">
               <img
                 class="skills__img img"
+                srcset="./images/box_3.jpg 1x, ./images/box_3-2x.jpg 2x"
                 src="./images/box_3.jpg"
                 alt="Работа с палитрой цветов"
                 width="370"
@@ -157,14 +201,15 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="team">
+      </section>
+      <section class="team">
         <div class="container-site">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <img
                 class="team__img img"
+                srcset="./images/img_1.jpg 1x, ./images/img_1-2x.jpg 2x"
                 src="./images/img_1.jpg"
                 alt="Product Designer"
                 width="270"
@@ -204,6 +249,7 @@
             <li class="team__item">
               <img
                 class="team__img img"
+                srcset="./images/img_2.jpg 1x, ./images/img_2-2x.jpg 2x"
                 src="./images/img_2.jpg"
                 alt="Frontend Developer"
                 width="270"
@@ -243,6 +289,7 @@
             <li class="team__item">
               <img
                 class="team__img img"
+                srcset="./images/img_3.jpg 1x, ./images/img_3-2x.jpg 2x"
                 src="./images/img_3.jpg"
                 alt="Marketing"
                 width="270"
@@ -282,6 +329,7 @@
             <li class="team__item">
               <img
                 class="team__img img"
+                srcset="./images/img_4.jpg 1x, ./images/img_4-2x.jpg 2x"
                 src="./images/img_4.jpg"
                 alt="UI Designer"
                 width="270"
@@ -320,8 +368,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients">
+      </section>
+      <section class="clients">
         <div class="container-site">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list list">
@@ -363,9 +411,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container-site">
         <div class="footer__info">
           <a class="footer__logo logo" href="./index.html" lang="en"
@@ -383,7 +431,9 @@
                 >
               </li>
               <li class="footer__address-item">
-                <a class="footer__address-mail link" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer__address-mail link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="footer__address-item">
                 <a class="footer__address-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -438,7 +488,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn-close" data-modal-close>
@@ -459,7 +509,6 @@
                 minlength="2"
                 required
               />
-
               <svg class="modal__input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
@@ -476,7 +525,6 @@
                 maxlength="13"
                 required
               />
-
               <svg class="modal__input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-tel-modal"></use>
               </svg>
@@ -513,8 +561,10 @@
                 ><svg class="modal__icon-check" width="16" height="15">
                   <use href="./images/icons.svg#icon-accept"></use></svg
               ></span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="modal__link-policy"
-                >Условия договора</a
+              <span class="policy">
+                Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="modal__link-policy"
+                  >Условия договора</a
+                ></span
               ></label
             >
           </div>
@@ -523,5 +573,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mob.js"></script>
   </body>
 </html>

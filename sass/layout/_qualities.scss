@@ -1,13 +1,15 @@
 .qualities {
   padding-bottom: 60px;
   padding-top: 60px;
-  margin: 0 auto;
   background-color: var(--qualities-skills-background-color);
   @include desktop {
+    width: 100%;
+    margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .qualities__list {
   display: block;
   justify-content: center;
@@ -64,15 +66,22 @@
   }
 }
 
+
 .qualities__top-text {
   margin-bottom: 10px;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
+  text-align: center;
   color: var(--top-text-color);
+  @include tablet {
+  text-align: left;
+  }
+  @include desktop {
+    text-align: center;
+  }
 }
 
 .qualities__bottom-text {
-  max-width: 270px;
   @include font(400, 14px, 1.71, 0.03em);
   color: var(--bottom-text-color);
 }

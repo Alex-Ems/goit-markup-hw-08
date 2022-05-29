@@ -31,7 +31,7 @@
           >
           <ul class="header-list list">
             <li class="header-list__item">
-              <a class="header-list__link link" href="./index.html">Студия</a>
+              <a class="header-list__link link" href="">Студия</a>
             </li>
             <li class="header-list__item">
               <a class="header-list__link link current" href="./portfolio.html">Портфолио</a>
@@ -59,6 +59,43 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn__open-menu" data-menu-open>
+          <svg class="btn__icon-open-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-open-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden-mob" data-menu>
+        <button type="button" class="menu-close-mob" data-menu-close>
+          <svg class="btn__icon-close-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-menu-mob"></use>
+          </svg>
+        </button>
+        <ul class="nav-mob-list list">
+          <li class="nav-mob-item">
+            <a href="./index.html" class="nav-mob-link link">Студия</a>
+          </li>
+          <li class="nav-mob-item">
+            <a href="./portfolio.html" class="nav-mob-link link current-mob">Портфолио</a>
+          </li>
+          <li class="nav-mob-item"><a href="#" class="nav-mob-link link">Контакты</a></li>
+        </ul>
+        <div>
+          <ul class="mob-contact-list list">
+            <li class="mob-contact-item">
+              <a class="mob-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-contact-item">
+              <a class="mob-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-social-list list">
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Instagram</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Twitter</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">Facebook</a></li>
+            <li class="mob-social-item"><a href="#" class="mod-social-link link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main-portfolio">
@@ -86,13 +123,31 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio1.jpg 1x, ./images/portfolio1-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1-tablet.jpg    1x,
+                        ./images/portfolio1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio1-mob.jpg 1x, ./images/portfolio1-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio1.jpg"
+                      alt="Технокряк"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -108,13 +163,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio2.jpg 1x, ./images/portfolio2-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2-tablet.jpg    1x,
+                        ./images/portfolio2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio2-mob.jpg 1x, ./images/portfolio2-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -135,13 +207,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio3.jpg 1x, ./images/portfolio3-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3-tablet.jpg    1x,
+                        ./images/portfolio3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio3-mob.jpg 1x, ./images/portfolio3-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio3.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -159,13 +248,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio4.jpg 1x, ./images/portfolio4-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4-tablet.jpg    1x,
+                        ./images/portfolio4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio4-mob.jpg 1x, ./images/portfolio4-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio4.jpg"
+                      alt="Проект Prime"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -183,13 +289,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio5.jpg 1x, ./images/portfolio5-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5-tablet.jpg    1x,
+                        ./images/portfolio5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio5-mob.jpg 1x, ./images/portfolio5-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio5.jpg"
+                      alt="Проект Boxes"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -207,13 +330,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio6.jpg 1x, ./images/portfolio6-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6-tablet.jpg    1x,
+                        ./images/portfolio6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio6-mob.jpg 1x, ./images/portfolio6-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio6.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -229,13 +369,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio7.jpg 1x, ./images/portfolio7-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7-tablet.jpg    1x,
+                        ./images/portfolio7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio7-mob.jpg 1x, ./images/portfolio7-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio7.jpg"
+                      alt="Издание Limited Edition"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -253,13 +410,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio8.jpg 1x, ./images/portfolio8-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8-tablet.jpg    1x,
+                        ./images/portfolio8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio8-mob.jpg 1x, ./images/portfolio8-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio8.jpg"
+                      alt="Проект LAB"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -277,13 +451,30 @@
             <li class="project-item">
               <a class="project-link link" href="#">
                 <div class="project-hover-container">
-                  <img
-                    class="project-img"
-                    src="./images/portfolio9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio9.jpg 1x, ./images/portfolio9-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9-tablet.jpg    1x,
+                        ./images/portfolio9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/portfolio9-mob.jpg 1x, ./images/portfolio9-mob-2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./images/portfolio9.jpg"
+                      alt="Growing Business"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -376,5 +567,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu-mob.js"></script>
   </body>
 </html>

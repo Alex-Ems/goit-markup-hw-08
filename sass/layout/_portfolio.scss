@@ -1,11 +1,9 @@
 .types-of-projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--portfolio-background-color);
-}
-
-.types-of-projects__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
