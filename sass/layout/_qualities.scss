@@ -1,42 +1,78 @@
 .qualities {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin: 0 auto;
   background-color: var(--qualities-skills-background-color);
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .qualities__list {
-  display: flex;
+  display: block;
+  justify-content: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .qualities__icon-background {
-  display: flex;
-  width: 270px;
+  width: 100%;
   height: 120px;
-  justify-content: center;
-  align-items: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  display: flex;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
+  }
 }
 
-.qualities__item:not(:last-child) {
-  margin-right: 30px;
+.qualities__item {
+  width: 100%;
+  margin-bottom: 30px;
+  display: block;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @include desktop {
+    width: 270px;
+    margin-bottom: 0;
+    margin-left: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .qualities__top-text {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--top-text-color);
 }
 
 .qualities__bottom-text {
   max-width: 270px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: var(--bottom-text-color);
 }
