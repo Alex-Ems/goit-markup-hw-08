@@ -1,12 +1,12 @@
 .footer-social {
-text-align: center;
-margin-bottom: 60px;
-@include tablet {
-  margin-bottom: 0;
-}
-@include desktop {
+  text-align: center;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
     text-align: left;
-}
+  }
 }
 
 .footer-social__list {
@@ -19,7 +19,8 @@ margin-bottom: 60px;
   width: 44px;
   height: 44px;
   &:not(:last-child) {
-  margin-right: 10px;}
+    margin-right: 10px;
+  }
 }
 
 .footer-social__link {
@@ -34,8 +35,9 @@ margin-bottom: 60px;
   transition: background-color 250ms var(--animation);
   &:hover,
   &:focus {
-  background-color: #2196f3;
-  color: #ffffff;}
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
 
 .footer-social__icon {

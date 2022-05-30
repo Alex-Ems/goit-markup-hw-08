@@ -3,10 +3,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(400, 18px, 1.56, 0.03em);
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;

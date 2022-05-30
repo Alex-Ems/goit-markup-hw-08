@@ -5,7 +5,7 @@
 .footer__info {
   text-align: center;
   margin-bottom: 60px;
-    @include desktop {
+  @include desktop {
     margin-bottom: 0;
     margin-right: 70px;
     text-align: left;
@@ -23,15 +23,12 @@
     align-items: baseline;
   }
   @include desktop {
-  justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 
 .footer__bottom-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--footer__bottom-text-color);

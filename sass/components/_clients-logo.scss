@@ -15,16 +15,14 @@
   margin-bottom: 30px;
   margin-left: 30px;
 
-
   @include tablet {
     width: calc(100% / 3 - 30px);
   }
   @include desktop {
-  width: calc(100% / 6 - 30px);
+    width: calc(100% / 6 - 30px);
   }
 }
-.clients__item
-.clients__link {
+.clients__item .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,12 +33,14 @@
   border-radius: 4px;
 }
 
-  .clients__link {
+.clients__link {
   transition: color 250ms var(--animation), border-color 250ms var(--animation);
 
-  &:hover, &:focus {
-  border: 1px solid #2196f3;
-  color: #2196f3;}
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    color: #2196f3;
+  }
 }
 
 .clients__icon {

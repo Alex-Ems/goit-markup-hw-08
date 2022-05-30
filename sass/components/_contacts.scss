@@ -13,7 +13,7 @@
 
 .header-contact__item:first-child {
   @include desktop {
-  margin-right: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -21,7 +21,7 @@
   padding-top: 21px;
   padding-bottom: 10px;
 }
-.header-tel{
+.header-tel {
   padding-bottom: 21px;
 }
 
@@ -32,14 +32,15 @@
   @include font(500, 12px, 1.17, 0.02em);
   color: var(--contacts-color);
   @include desktop {
-  padding-bottom: 32px;
-  padding-top: 32px;
-  @include font(null, 14px, 1.14, null);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    @include font(null, 14px, 1.14, null);
+  }
+  &:hover,
+  &:focus {
+    color: var(--header-link-hover);
+  }
 }
-  &:hover, &:focus{
-  color: var(--header-link-hover);}
-}
-
 
 .header-contact__icon {
   fill: currentColor;
@@ -47,6 +48,4 @@
   @include desktop {
     margin-right: 10px;
   }
-  
 }
-

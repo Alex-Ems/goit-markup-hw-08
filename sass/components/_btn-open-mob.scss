@@ -1,19 +1,19 @@
 .btn__open-menu {
-    padding: 10px 0;
-    margin-left: auto;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    cursor: var(--cursor-button);
-    &:hover .btn__icon-open-menu,
-    &:focus .btn__icon-open-menu {
-        fill: #2196f3;
-    }
-    @include tablet {
-        display: none;
-    }
+  padding: 10px 0;
+  margin-left: auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: var(--cursor-button);
+  &:hover .btn__icon-open-menu,
+  &:focus .btn__icon-open-menu {
+    fill: #2196f3;
+  }
+  @include tablet {
+    display: none;
+  }
 }
 
 .btn__icon-open-menu {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

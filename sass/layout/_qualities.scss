@@ -66,7 +66,6 @@
   }
 }
 
-
 .qualities__top-text {
   margin-bottom: 10px;
   @include font(700, 14px, 1.14, 0.03em);
@@ -74,7 +73,7 @@
   text-align: center;
   color: var(--top-text-color);
   @include tablet {
-  text-align: left;
+    text-align: left;
   }
   @include desktop {
     text-align: center;

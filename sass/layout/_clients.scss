@@ -3,10 +3,9 @@
   padding-bottom: 60px;
 
   @include desktop {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-
 }
 
 .clients__title {
@@ -14,8 +13,8 @@
   text-align: center;
   color: var(--clients__title);
   margin-bottom: 50px;
-  
+
   @include desktop {
-    @include font(null, 36px, 1.18, null)
+    @include font(null, 36px, 1.18, null);
   }
 }

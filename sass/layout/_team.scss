@@ -4,8 +4,8 @@
 
   background-color: var(--team-background-colour);
   @include desktop {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -26,15 +26,16 @@
   border-radius: 0px 0px 4px 4px;
   width: 100%;
   &:not(:last-child) {
-  margin-bottom: 30px;}
+    margin-bottom: 30px;
+  }
 
   @include tablet {
-  width: calc(100% / 2 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   @include desktop {
-  width: calc(100% / 4 - 30px);
+    width: calc(100% / 4 - 30px);
   }
 }
 .team__img {
@@ -55,23 +56,15 @@
 }
 
 .specialist__team-member {
+  @include font(500, 16px, 1.19, 0.03em);
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--specialist__team-member-color);
 }
 
-
 .specialist__tech-skill {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(400, null, null, null);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--specialist__tech-skill-color);
   margin-bottom: 16px;
 }
-

@@ -1,18 +1,15 @@
 .skills {
   padding-bottom: 94px;
   display: none;
-  @include desktop{
+  @include desktop {
     display: block;
   }
 }
 
 .skills__title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--skills__title-color);
 }
 
@@ -23,7 +20,8 @@
 .skills__item {
   position: relative;
   &:not(:last-child) {
-  margin-right: 30px;}
+    margin-right: 30px;
+  }
 }
 
 .skills__container-text {
@@ -38,10 +36,7 @@
 }
 
 .skill__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 }

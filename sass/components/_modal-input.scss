@@ -4,10 +4,7 @@
 
 .modal__label {
   display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
   color: #757575;
   margin-bottom: 4px;
 }
@@ -20,15 +17,18 @@
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:valid {
-  border-color: green;}
+    border-color: green;
+  }
 
   &:invalid {
-  border-color: rgba(33, 33, 33, 0.2);}
+    border-color: rgba(33, 33, 33, 0.2);
+  }
 
   &:focus {
-  border-color: var(--accent-color-modal);}
+    border-color: var(--accent-color-modal);
+  }
 }
 
 .modal__input:focus + .modal__input-icon {
@@ -52,6 +52,7 @@
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 0;
+  @include font(400, 14px, 1.14, 0.01em);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -59,5 +60,6 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-  border-color: var(--accent-color-modal);}
+    border-color: var(--accent-color-modal);
+  }
 }
