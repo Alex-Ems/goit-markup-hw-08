@@ -130,7 +130,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
+  max-width: 760px;
   background-color: #ffffff;
   position: fixed;
   bottom: 0;
@@ -618,7 +618,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .qualities__top-text {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1438,7 +1438,6 @@ img {
 }
 
 .project-item {
-  display: block;
   width: 100%;
 }
 .project-item:not(:last-child) {
@@ -1454,6 +1453,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .project-item {
+    display: block;
     width: calc(33.3333333333% - 30px);
   }
 }

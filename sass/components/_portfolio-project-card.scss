@@ -8,7 +8,6 @@
 }
 
 .project-item {
-  display: block;
   width: 100%;
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -20,6 +19,7 @@
     margin-bottom: 30px;
   }
   @include desktop {
+    display: block;
     width: calc(100% / 3 - 30px);
   }
 }
